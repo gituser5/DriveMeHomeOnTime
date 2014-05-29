@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+     
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" >
+        
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/first"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/last"
+            android:inputType="textCapWords" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:inputType="text|number" />
+    
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword|numberPassword" />
+    
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        android:inputType="text|number" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/state"
+            android:inputType="textCapCharacters" />
+
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/zip"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="number"
+        android:hint="@string/zip" />
+    
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+    
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+    
+    <EditText 
+        android:id="@+id/drivers_license"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:inputType="textCapCharacters|number"
+        android:hint="@string/license" />
+    
+    <RadioGroup
+        android:id="@+id/driver_types"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" >
+        
+        <RadioButton 
+            android:id="@+id/driver"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/driver" />
+        
+        <RadioButton 
+            android:id="@+id/passenger"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/passenger" />
+        
+        <RadioButton 
+            android:id="@+id/private_driver"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/private_driver" />
+        
+    </RadioGroup>
+    
+    <Button 
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:onClick="submitRegistration" />
+
+</LinearLayout>
